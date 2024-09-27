@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Zera as margens e padding, define o box-sizing para incluir bordas no tamanho total da caixa e configura a fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    text-decoration: none;
+    scroll-behavior: smooth; /* Suaviza o scroll da página */
+    list-style: none; /* Remove os bullets das listas */
+}
+header {
+    position: fixed; /* Fixa o header na página, mesmo ao rolar */
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente o header */
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 5rem; /* Espaço entre os elementos do header */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo com opacidade */
+    backdrop-filter: blur(8px); /* Aplica desfoque no fundo */
+    color: white;
+    padding: 0.5rem 1.5rem; /* Espaçamento interno do header */
+    border-radius: 3rem; /* Arredonda as bordas do header */
+    z-index: 1000; /* Garante que o header fique por cima de outros elementos */
+}
+
+.logo {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-wrap: nowrap; /* Impede quebra de linha no texto */
+    transition: 0.3s ease-in-out; /* Animação suave ao interagir */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Aumenta o logo ao passar o mouse */
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem; /* Espaço entre os links de navegação */
+}
+
+li a {
+    position: relative;
+    color: white;
+    font-weight: 300;
+}
+
+li a::before {
+    position: absolute;
+    content: ''; /* Cria a linha decorativa abaixo dos links */
+    width: 0; /* Inicialmente oculta a linha */
+    left: 0;
+    height: 5px;
+    top: 25px;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out; /* Suaviza a animação da linha */
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255)); /* Aplica gradiente de cor */
+}
+
+li a:hover::before {
+    width: 100%; /* Mostra a linha decorativa ao passar o mouse */
+}
+
+.botao-visita {
+    padding: 0.8rem 1.5rem; /* Espaçamento interno do botão */
+    border-radius: 3rem; /* Arredonda as bordas do botão */
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-wrap: nowrap; /* Impede quebra de linha no texto */
+    transition: 0.3s ease-in-out; /* Suaviza a animação ao interagir */
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255)); /* Gradiente no fundo do botão */
+}
+
+.botao-visita:hover {
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255)); /* Mantém o gradiente ao interagir */
+    transform: scale(1.03); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+#icone-menu {
+    font-size: 2rem;
+    display: none; /* Inicialmente oculta o ícone de menu */
+}
+
+section{
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobre .sobre-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+.sobre img{
+    width: 30vw;
+    border-radius: 50%;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.info-box h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.info-box h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.info-box span{
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+.btn-grupo{
+    display: flex;
+    gap: 1rem;
+}
+.btn{
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.2 ease ease-in-out;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+.social{
+    display: flex;
+    gap: 2rem;
+}
+.social i{
+    font-size: 2.5rem;
+    cursor:pointer;
+    transition: 0.2s ease-in-out;
+}
+.social i:hover{
+    transform: scale(1.1)
+}
+.titulo-section{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.experiencia-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.experiencia img{
+    width: 24vw;
+    border-radius: 3rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.grid-card{
+    border: 2px solid black;
+    
+}
