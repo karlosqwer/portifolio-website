@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* ---------------- SOBRE OS COMENTÁRIOS ----------------
+   Comentários organizados para facilitar a leitura e 
+   a manutenção do código. Cada seção tem seu espaço, 
+   ajudando a identificar rapidamente as partes do layout.
+-------------------------------------------------------- */
+
+
 /* Zera as margens e padding, define o box-sizing para incluir bordas no tamanho total da caixa e configura a fonte padrão */
 * {
     margin: 0;
@@ -420,39 +427,122 @@ footer ul li a {
     /* ---------------- COPYRIGHT ---------------- */
     
     /* Estiliza a mensagem de copyright no rodapé */
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 300;
+    margin-top: 2rem;
 }
 
-
-@media(max-width:1280px){
-    header{
+@media(max-width: 1280px) {
+    header {
         padding: 1rem 2rem;
         gap: 2rem;
     }
-    .sobre .sobre-container{
+    
+    .sobre .sobre-container {
         gap: 3rem;
     }
-    .experiencia-info{
+    
+    .experiencia-info {
         flex-direction: column;
     }
-    .info-box input{
+    
+    .input-box input{
         padding: 2rem 5rem;
         font-size: 2.5rem;
     }
+
     .input input::placeholder{
-        font-size: 2.5rem;
+        padding: 2.5rem;
     }
-    .input-box i{
+
+    .info-box i{
         font-size: 2.5rem;
     }
 }
 
-@media(max-width:768px){
+@media(max-width: 768px) {
+    header {
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
     
-}
+    header .logo {
+        font-size: 1rem;
+    }
+    
+    header .botao-visita {
+        display: none;
+    }
+
+    .sobre-container{
+        flex-direction: column;
+    }
+    
+    .input-box input {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .input-box input::placeholder {
+        font-size: 1.5rem;
+    }
+    
+    .input-box i {
+        display: none;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(1,1fr); /* Alterado para melhor responsividade */
+    }
+    
+    .experiencia-info img {
+        width: 70vw
+    }
+} 
 
 @media(max-width:600px){
-    
+    header #icone-menu{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 3rem;
+        display:none
+    }
+    .nav-links li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    header{
+        padding: 1.5rem 5rem;
+        gap: 8rem;
+    }
+    header .logo{
+        font-size: 1.5rem;
+    }
+    .sobre-container{
+        width: 80vw;
+    }
+    .input-box input{
+        padding: 0.5rem 3rem;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .input-box input::placeholder{
+        font-size: 1.5rem;
+    }
+    footer ul{
+        gap: 1rem;
+    }
 }

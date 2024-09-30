@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
-    <title>Portfólio | Karlos Eduardo</title> <!-- Título da página -->
-    <link rel="stylesheet" href="scr/styles/style.css"> <!-- Link para o arquivo de estilo CSS -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para garantir a responsividade em dispositivos móveis -->
+    <title>Portfólio | Karlos Eduardo</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="assets/styles/style.css"> <!-- Link para o arquivo de estilo CSS para estilização da página -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> <!-- Link para a biblioteca de ícones Font Awesome -->
-    <link rel="shortcut icon" href="scr/images/favicon/favicon.ico" type="image/x-icon"> <!-- Favicon para a aba do navegador -->
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon"> <!-- Favicon que aparece na aba do navegador -->
 </head>
 <body>
     
     <header class="header">
-        <!-- Logotipo com link para o topo da página -->
+        <!-- Logotipo que redireciona para o topo da página -->
         <a href="#" class="logo"><span>Karlos Eduardo</span></a>
 
-        <!-- Menu de navegação com links internos -->
+        <!-- Menu de navegação com links internos para diferentes seções da página -->
         <ul class="nav-links">
             <li>
                 <a href="#sobre">Sobre</a> <!-- Link para a seção "Sobre" -->
             </li>
-
             <li>
                 <a href="#experiencia">Experiência</a> <!-- Link para a seção "Experiência" -->
             </li>
-
             <li>
                 <a href="#projetos">Projetos</a> <!-- Link para a seção "Projetos" -->
             </li>
-
             <li>
                 <a href="#contato">Contato</a> <!-- Link para a seção "Contato" -->
             </li>
@@ -36,109 +33,103 @@
         <!-- Ícone de menu para dispositivos móveis (inicialmente oculto) -->
         <i class="fa-duotone fa-solid fa-bars" id="icone-menu"></i>
 
-        <!-- Botão para redirecionar ao GitHub -->
+        <!-- Botão que redireciona o usuário ao GitHub -->
         <button class="botao-visita">Visite meu GitHub</button>
     </header>
 
     <section id="sobre" class="sobre">
         <div class="sobre-container">
-            <img src="scr/images/fotos/imagem-perfil.png" alt="">
+            <img src="assets/images/fotos/imagem-perfil.png" alt="Imagem de perfil"> <!-- Imagem de perfil do usuário -->
 
             <div class="info-box">
-
                 <div class="text">
-                    <h3>Olá, sou</h3>
-                    <h1>Karlos Eduardo</h1>
-                    <span>Frontend Developer</span>
+                    <h3>Olá, sou</h3> <!-- Saudação -->
+                    <h1>Karlos Eduardo</h1> <!-- Nome do usuário -->
+                    <span>Frontend Developer</span> <!-- Título profissional -->
                 </div>
 
                 <div class="btn-grupo">
-                    <div class="btn" id="download-cv">Download CV</div>
-                    <div class="btn">Contato</div>
+                    <div class="btn" id="download-cv">Download CV</div> <!-- Botão para download do currículo -->
+                    <div class="btn">Contato</div> <!-- Botão para contato -->
                 </div>
 
                 <div class="social">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i> <!-- Ícone do GitHub -->
+                    <i class="fa-brands fa-linkedin"></i> <!-- Ícone do LinkedIn -->
                 </div>
-             
             </div>
         </div>
     </section>
 
     <section id="experiencia" class="experiencia">
-
-        <h2 class="titulo-section">Experiência</h2>
+        <h2 class="titulo-section">Experiência</h2> <!-- Título da seção "Experiência" -->
 
         <div class="experiencia-info">
-
             <div class="grid">
                 <div class="grid-card">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Infortech</span>
-                    <h3>6 meses</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <i class="fa-solid fa-code"></i> <!-- Ícone representando a experiência na área de programação -->
+                    <span>Infortech</span> <!-- Nome da empresa -->
+                    <h3>6 meses</h3> <!-- Duração da experiência -->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> <!-- Descrição da experiência -->
                 </div>
 
                 <div class="grid-card">
-                    <i class="fa-solid fa-file-code"></i>
-                    <span>Certsempre</span>
-                    <h3>6 meses</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <i class="fa-solid fa-file-code"></i> <!-- Ícone representando a experiência com codificação -->
+                    <span>Certsempre</span> <!-- Nome da empresa -->
+                    <h3>6 meses</h3> <!-- Duração da experiência -->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> <!-- Descrição da experiência -->
                 </div>
 
                 <div class="grid-card">
-                    <i class="fa-solid fa-laptop"></i>
-                    <span>Udemy</span>
-                    <h3>6 meses</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <i class="fa-solid fa-laptop"></i> <!-- Ícone representando aprendizado online -->
+                    <span>Udemy</span> <!-- Nome da plataforma -->
+                    <h3>6 meses</h3> <!-- Duração da experiência -->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> <!-- Descrição da experiência -->
                 </div>
 
                 <div class="grid-card">
-                    <i class="fa-solid fa-terminal"></i>
-                    <span>Alura</span>
-                    <h3>6 meses</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <i class="fa-solid fa-terminal"></i> <!-- Ícone representando terminal/CLI -->
+                    <span>Alura</span> <!-- Nome da plataforma -->
+                    <h3>6 meses</h3> <!-- Duração da experiência -->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> <!-- Descrição da experiência -->
                 </div>
             </div>
 
-            <img src="scr/images/fotos/code-foto.jpeg" alt="">
+            <img src="assets/images/fotos/code-foto.jpeg" alt="Imagem de código"> <!-- Imagem representativa de codificação -->
         </div>
     </section>
 
     <section id="projetos" class="projetos">
-
-        <h2 class="titulo-section">Projetos Recentes</h2>
+        <h2 class="titulo-section">Projetos Recentes</h2> <!-- Título da seção "Projetos" -->
 
         <div class="projetos-grid">
-
             <div class="projetos-card">
-                <img src="scr/images/imagens_projetos/portifolio-home.jpeg" alt="">
-                <h3>Projeto Portifólio</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <img src="assets/images/imagens_projetos/portifolio-home.jpeg" alt="Projeto Portfólio"> <!-- Imagem do projeto -->
+                <h3>Projeto Portifólio</h3> <!-- Nome do projeto -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> <!-- Descrição do projeto -->
                 <div class="btn-grupo">
-                    <div class="btn">Visualizar Projeto</div>
-                    <div class="btn">Repositório Github</div>
+                    <div class="btn">Visualizar Projeto</div> <!-- Botão para visualizar o projeto -->
+                    <div class="btn">Repositório Github</div> <!-- Botão para acessar o repositório no GitHub -->
                 </div>
             </div>
 
             <div class="projetos-card">
-                <img src="scr/images/imagens_projetos/portifolio-home.jpeg" alt="">
-                <h3>Projeto Y</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <img src="assets/images/imagens_projetos/portifolio-home.jpeg" alt="Projeto Y"> <!-- Imagem do projeto -->
+                <h3>Projeto Y</h3> <!-- Nome do projeto -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> <!-- Descrição do projeto -->
                 <div class="btn-grupo">
-                    <div class="btn">Visualizar Projeto</div>
-                    <div class="btn">Repositório Github</div>
+                    <div class="btn">Visualizar Projeto</div> <!-- Botão para visualizar o projeto -->
+                    <div class="btn">Repositório Github</div> <!-- Botão para acessar o repositório no GitHub -->
                 </div>
             </div>
 
             <div class="projetos-card">
-                <img src="scr/images/imagens_projetos/projeto-rayssa.png" alt="">
-                <h3>Projeto Pedido</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <img src="assets/images/imagens_projetos/projeto-rayssa.png" alt="Projeto Pedido"> <!-- Imagem do projeto -->
+                <h3>Projeto Pedido</h3> <!-- Nome do projeto -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> <!-- Descrição do projeto -->
                 <div class="btn-grupo">
-                    <div class="btn">Visualizar Projeto</div>
-                    <div class="btn">Repositório Github</div>
+                    <div class="btn">Visualizar Projeto</div> <!-- Botão para visualizar o projeto -->
+                    <div class="btn">Repositório Github</div> <!-- Botão para acessar o repositório no GitHub -->
                 </div>
             </div>
         </div>
@@ -146,43 +137,36 @@
 
     <section class="contato" id="contato">
         <div class="input-box">
-
-            <h2 class="section-titulo">Entre em contato</h2>
+            <h2 class="section-titulo">Entre em contato</h2> <!-- Título da seção "Contato" -->
 
             <div class="input">
-                <input type="text" placeholder="exemplo@email.com">
-                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="exemplo@email.com"> <!-- Campo para inserir o email -->
+                <i class="fa-solid fa-envelope"></i> <!-- Ícone de envelope -->
             </div>
 
-            <div class="btn">Enviar</div>
+            <div class="btn">Enviar</div> <!-- Botão para enviar a mensagem -->
         </div>
     </section>
 
     <footer>
-
         <ul>
             <li>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre">Sobre</a> <!-- Link para a seção "Sobre" -->
             </li>
-
             <li>
-                <a href="#experiencia">Experiência</a>
+                <a href="#experiencia">Experiência</a> <!-- Link para a seção "Experiência" -->
             </li>
-
             <li>
-                <a href="#projetos">Projetos</a>
+                <a href="#projetos">Projetos</a> <!-- Link para a seção "Projetos" -->
             </li>
-
             <li>
-                <a href="#contato">Contato</a>
+                <a href="#contato">Contato</a> <!-- Link para a seção "Contato" -->
             </li>
         </ul>
 
-        <p><div class="copyright">Todos os direitos reservados | Karlos Eduardo</div></p>
+        <p><div class="copyright">© Todos os direitos reservados | Karlos Eduardo</div></p> <!-- Mensagem de direitos autorais -->
     </footer>
 
-
-
-    <script src="scr/javascript/script.js"></script> <!-- Link para o arquivo JavaScript -->
+    <script src="assets/javascript/script.js"></script> <!-- Link para o arquivo JavaScript que adiciona interatividade à página -->
 </body>
 </html>
