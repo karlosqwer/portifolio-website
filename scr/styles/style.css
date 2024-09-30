@@ -10,6 +10,7 @@
     scroll-behavior: smooth; /* Suaviza o scroll da página */
     list-style: none; /* Remove os bullets das listas */
 }
+/* ---------------- HEADER ---------------- */
 header {
     position: fixed; /* Fixa o header na página, mesmo ao rolar */
     top: 1rem;
@@ -90,54 +91,81 @@ li a:hover::before {
 }
 
 section{
+    /* ---------------- SECTION ---------------- */
+    
+    /* Define altura mínima de 100% da altura da janela e espaçamento interno */
     min-height: 100vh;
     padding: 8rem 12%;
     width: 100%;
     position: relative;
 }
+
 .sobre{
+    /* ---------------- SOBRE ---------------- */
+    
+    /* Alinha os itens no centro da tela horizontal e verticalmente */
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .sobre .sobre-container{
+    /* Flex para organizar os elementos de forma centralizada com espaçamento entre eles */
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 10rem; /* Espaçamento entre os elementos */
 }
+
 .sobre img{
+    /* Define a largura da imagem e a torna redonda */
     width: 30vw;
     border-radius: 50%;
 }
+
 .info-box{
+    /* ---------------- INFO-BOX ---------------- */
+    
+    /* Flex em coluna, centraliza os textos */
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1.5rem; /* Espaçamento entre os textos */
 }
+
 .info-box h3{
+    /* Define o tamanho da fonte e opacidade do subtítulo */
     font-size: 1.8rem;
     font-weight: 500;
     opacity: 0.8;
 }
+
 .info-box h1{
+    /* Define o tamanho e peso da fonte do título */
     font-size: 4rem;
     font-weight: 600;
 }
+
 .info-box span{
+    /* Aplica gradiente no texto e define como transparente, mostrando apenas o gradiente */
     background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
     background-clip: text;
     color: transparent;
     font-size: 2rem;
 }
+
 .btn-grupo{
+    /* ---------------- BOTÕES ---------------- */
+    
+    /* Organiza botões em linha com espaçamento entre eles */
     display: flex;
     gap: 1rem;
 }
+
 .btn{
+    /* Define o estilo dos botões com borda arredondada, espaçamento e transição */
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
     border: 2px solid black;
@@ -146,44 +174,72 @@ section{
     text-wrap: nowrap;
     transition: 0.2 ease ease-in-out;
 }
+
 .btn:hover{
+    /* Efeito de hover nos botões, alterando a cor de fundo e texto */
     background-color: black;
     color: white;
 }
+
 .social{
+    /* ---------------- ÍCONES SOCIAIS ---------------- */
+    
+    /* Exibe os ícones sociais em linha com espaçamento */
     display: flex;
     gap: 2rem;
 }
+
 .social i{
+    /* Define tamanho e cursor para os ícones */
     font-size: 2.5rem;
     cursor:pointer;
     transition: 0.2s ease-in-out;
 }
+
 .social i:hover{
+    /* Efeito de hover para aumentar o tamanho dos ícones */
     transform: scale(1.1)
 }
+
 .titulo-section{
+    /* ---------------- TÍTULO DA SECTION ---------------- */
+    
+    /* Estiliza o título da section com centralização, tamanho e espaçamento */
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
     margin-bottom: 3rem;
 }
+
 .experiencia-info{
+    /* ---------------- EXPERIÊNCIA ---------------- */
+    
+    /* Alinha os itens de experiência no centro e com espaçamento */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
 }
+
 .experiencia img{
+    /* Define largura e bordas arredondadas para as imagens de experiência */
     width: 24vw;
     border-radius: 3rem;
 }
+
 .grid{
+    /* ---------------- GRID ---------------- */
+    
+    /* Cria um layout em grid com 2 colunas e espaçamento entre os itens */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
 }
+
 .grid-card{
+    /* ---------------- CARTÃO GRID ---------------- */
+    
+    /* Estiliza os cartões da grid com borda, padding e efeitos de transição */
     border: 2px solid black;
     border-radius: 3rem;
     padding: 3rem;
@@ -194,37 +250,57 @@ section{
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
+
 .grid-card:hover{
+    /* Efeito de hover nos cartões, aumentando o tamanho e mudando a cor de fundo e texto */
     transform: scale(1.02);
     background-color: black;
     color: white;
 }
+
 .grid-card i{
+    /* Define tamanho dos ícones dentro dos cartões */
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+
 .grid-card span{
+    /* Aplica gradiente no texto dos cartões e o torna transparente para mostrar o gradiente */
     font-size: 1.5rem;
     font-weight: 500;
     background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
     background-clip: text;
     color: transparent;
 }
+
 ::-webkit-scrollbar{
+    /* ---------------- SCROLLBAR ---------------- */
+    
+    /* Define largura da barra de rolagem */
     width: 20px;
 }
+
 ::-webkit-scrollbar-track{
+    /* Estilo para a trilha da barra de rolagem */
     background-color: rgb(219, 219, 219);
 }
+
 ::-webkit-scrollbar-thumb{
+    /* Aplica um gradiente na "thumb" da barra de rolagem */
     background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
 }
+
 .projetos-grid{
+    /* ---------------- GRID DE PROJETOS ---------------- */
+    
+    /* Grid responsiva para os projetos */
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 2rem;
 }
+
 .projetos-card{
+    /* Estilização dos cartões de projetos com borda, padding e transição */
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -237,30 +313,43 @@ section{
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
+
 .projetos-card:hover{
+    /* Efeito de hover nos cartões de projetos */
     background-color: black;
     color: white;
     transform: translateY(-10px)scale(1.02);
 }
+
 .projetos-card img{
+    /* Define o tamanho das imagens dentro dos cartões */
     width: 20vw;
     border-radius: 1rem;
 }
+
 .projetos-card:hover .btn{
+    /* Muda a borda e cor dos botões ao passar o mouse sobre os cartões */
     border: 2px solid white;
     color: white;
 }
+
 .projetos-card:hover .btn:hover{
+    /* Muda a cor de fundo e borda ao passar o mouse sobre os botões */
     border: 2px solid white;
     background-color: white;
     color: black;
 }
+
 .projetos-card h3{
+    /* Estiliza o título dos cartões de projetos */
     font-size: 2rem;
     font-weight: 500;
 }
 
 .input-box{
+    /* ---------------- INPUT BOX ---------------- */
+    
+    /* Flex para organizar a entrada de texto */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,19 +358,29 @@ section{
     gap: 2rem;
     margin-top: 5rem;
 }
+
 .input-box input{
+    /* Define o estilo dos campos de entrada de texto */
     border-radius: 5rem;
     border: 2px solid black;
     padding: 2rem 8rem;
     font-size: 3rem;
 }
+
 .input-box input::placeholder{
+    /* Estiliza o texto placeholder dos campos de entrada */
     font-size: 3rem;
 }
+
 .input{
+    /* ---------------- INPUT ---------------- */
+    
+    /* Define a posição relativa para ajustar o ícone */
     position: relative;
 }
+
 .input i{
+    /* Define o ícone dentro do campo de entrada */
     position: absolute;
     font-size: 4rem;
     top: 50%;
@@ -290,6 +389,9 @@ section{
 }
 
 footer {
+    /* ---------------- FOOTER ---------------- */
+    
+    /* Estiliza o rodapé com flexbox, centralizando o conteúdo */
     bottom: 0;
     left: 0;
     height: 10rem;
@@ -302,16 +404,55 @@ footer {
 }
 
 footer ul {
+    /* Exibe os links do rodapé em linha com espaçamento entre eles */
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
 footer ul li a {
+    /* Estilo dos links no rodapé */
     color: black;
     font-weight: 600;
 }
+
 .copyright{
-    font-size: 300;
-    margin-top: 2rem;
+    /* ---------------- COPYRIGHT ---------------- */
+    
+    /* Estiliza a mensagem de copyright no rodapé */
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+@media(max-width:1280px){
+    header{
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    .sobre .sobre-container{
+        gap: 3rem;
+    }
+    .experiencia-info{
+        flex-direction: column;
+    }
+    .info-box input{
+        padding: 2rem 5rem;
+        font-size: 2.5rem;
+    }
+    .input input::placeholder{
+        font-size: 2.5rem;
+    }
+    .input-box i{
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width:768px){
+    
+}
+
+@media(max-width:600px){
+    
 }
