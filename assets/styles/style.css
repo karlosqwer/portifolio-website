@@ -173,6 +173,7 @@ section{
 
 .btn{
     /* Define o estilo dos botões com borda arredondada, espaçamento e transição */
+    color: #000;
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
     border: 2px solid black;
