@@ -354,46 +354,46 @@ section{
     font-weight: 500;
 }
 
-.input-box{
-    /* ---------------- INPUT BOX ---------------- */
-    
-    /* Flex para organizar a entrada de texto */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 2rem;
-    margin-top: 5rem;
+/* ---------------- CONTATO ---------------- */
+.contato-links .contato-icones {
+    display: flex; /* Define o contêiner como flexível para alinhar os ícones horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 4.2rem; /* Adiciona um espaço de 4.2rem entre os ícones */
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
 }
 
-.input-box input{
-    /* Define o estilo dos campos de entrada de texto */
-    border-radius: 5rem;
-    border: 2px solid black;
-    padding: 2rem 8rem;
-    font-size: 3rem;
+.contato-links a {
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
 }
 
-.input-box input::placeholder{
-    /* Estiliza o texto placeholder dos campos de entrada */
-    font-size: 3rem;
+.contato-links i {
+    /* Define o tamanho e o cursor para os ícones */
+    font-size: 3.2rem; /* Tamanho do ícone, define como 3.2rem */
+    cursor: pointer; /* Altera o cursor para indicar que o ícone é clicável */
+    transition: 0.2s ease-in-out; /* Adiciona uma transição suave para os efeitos de hover */
 }
 
-.input{
-    /* ---------------- INPUT ---------------- */
-    
-    /* Define a posição relativa para ajustar o ícone */
-    position: relative;
+.contato-links i:hover {
+    /* Efeito de hover para aumentar o tamanho dos ícones */
+    transform: scale(1.1); /* Aumenta o tamanho do ícone em 10% ao passar o mouse sobre ele */
 }
 
-.input i{
-    /* Define o ícone dentro do campo de entrada */
-    position: absolute;
-    font-size: 4rem;
-    top: 50%;
-    left: 10px;
-    transform: translate(50%, -50%);
+/* Estilos para a barra animada */
+.contato-links a::after {
+    content: ''; /* Necessário para criar o pseudo-elemento */
+    position: absolute; /* Posiciona a barra em relação ao link */
+    left: 50%; /* Alinha a barra ao centro do link */
+    bottom: -5px; /* Distância da barra abaixo do ícone */
+    height: 5px; /* Altura da barra */
+    width: 0; /* Inicialmente oculta a barra */
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255)); /* Aplica gradiente de cor */
+    transition: width 0.3s ease-in-out; /* Suaviza a animação da barra */
+}
+
+/* Exibe a barra ao passar o mouse sobre o link */
+.contato-links a:hover::after {
+    width: 100%; /* Mostra a barra ao passar o mouse */
 }
 
 footer {
